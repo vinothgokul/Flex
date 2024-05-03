@@ -1,0 +1,45 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:is(html, body) {
+  height: 100vh;
+}
+
+header {
+  background-color: lightseagreen;
+  flex-grow: 1;
+}
+
+main {
+  display: flex;
+  flex-grow: 10;
+  gap: 40px;
+}
+
+aside {
+  background-color: lightcoral;
+  grid-area: aside;
+  flex-grow: 1;
+}
+
+section {
+  background-color: lightblue;
+  flex-grow: 3;
+}
+
+footer {
+  background-color: red;
+  flex-grow: 1;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  text-align: center;
+}
